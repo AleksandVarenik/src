@@ -1,0 +1,625 @@
+.body {
+    font-family: Aria, sans-serif;
+}
+
+/*Шапка и 1 блок*/
+nav {
+    width: 100%;
+    height: 60px;
+    background: #344051;
+    position: fixed;
+}
+
+.logo {
+    color: #fff;
+    font-size: 20px;
+    line-height: 58px;
+    padding-left: 100px;
+    float: left;
+    -webkit-animation: comming 2.5s ease;
+    -o-animation: comming 2.5s ease;
+    animation: comming 2.5s ease;
+}
+
+.menu {
+    padding-left: 450px;
+}
+
+.menu li {
+    float: left;
+    color: #fff;
+    margin-right: 60px;
+    font-size: 18px;
+    text-transform: uppercase;
+    -webkit-animation: topshift 0.4s ease forwards;
+    -o-animation: topshift 0.4s ease forwards;
+    animation: topshift 0.4s ease forwards;
+    opacity: 0;
+}
+
+.main {
+    width: 100%;
+    height: 650px;
+    float: left;
+    background: url(../img/maintenance.jpg) 50% 50%/cover no-repeat;
+    opacity: 1;
+}
+
+.title__container {
+    margin: 380px 0px 0px 100px;
+    color: #2c384a;
+    text-align: center;
+    -webkit-animation: titlemove 1.5s ease forwards;
+    -o-animation: titlemove 1.5s ease forwards;
+    animation: titlemove 1.5s ease forwards;
+    -webkit-animation-delay: 1.5s;
+    -o-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+    opacity: 0;
+}
+
+.title__container h1 {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.title__container h4 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #5d19fc;
+}
+
+.title__container input {
+    height: 40px;
+    text-align: center;
+    border: 2px solid #1509f2f7;
+    background: none;
+    border-radius: 5px;
+    color: #1509f2f7;
+    font-size: 13px;
+    padding: 0px 16px;
+    margin: 0px 18px 0px 14px;
+}
+
+.menu li a {
+    transition: all 0.1s;
+    color: white;
+    transform: scale(1);
+    display: inline-block;
+    text-decoration: none;
+}
+
+.menu li a:visited {
+    color: white;
+}
+
+.menu li a:hover {
+    color: orange;
+
+}
+
+.menu li a:active {
+    transform: scale(1.1);
+}
+
+.title__container input {
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.title__container input:hover {
+    background: #344051;
+    color: white;
+}
+
+.title__container input:active {
+    transform: scale(1);
+}
+
+i.custom_css3 {
+    font-size: 30px;
+    color: red;
+}
+
+@keyframes comming {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes topshift {
+    from {
+        opacity: 0;
+        margin-top: -60px;
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+.menu li:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.menu li:nth-child(3) {
+    animation-delay: 0.8s;
+}
+
+.menu li:nth-child(4) {
+    animation-delay: 1.2s;
+}
+
+.menu li:nth-child(5) {
+    animation-delay: 1.6s;
+}
+
+.menu li:nth-child(6) {
+    animation-delay: 2s;
+}
+
+@keyframes titlemove {
+    from {
+        opacity: 0;
+        margin-right: -700px;
+    }
+
+    to {
+        opacity: 1;
+        margin-right: 50px;
+    }
+}
+
+/* 2 Блок Обо мне*/
+.container {
+    width: 100%;
+    height: 650px;
+    background: url(../img/Фон\ копия1_cr.png) 61% 23% /150px 150px no-repeat;
+    float: left;
+}
+
+.title h2 {
+    float: left;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    padding-left: 600px;
+    text-transform: uppercase;
+}
+
+.title h2::before {
+    content: "";
+    display: inline-block;
+    background-color: orange;
+    border-radius: 50%;
+
+}
+
+.title h2::before {
+    width: 100%;
+    height: 4px;
+    transform: scalex(0);
+    background-color: orange;
+    transition: all 0.3s;
+}
+
+.title h2:hover::before {
+    transform: scalex(1);
+}
+
+.title p {
+    font-family: Calibri;
+    font-size: 13px;
+    float: left;
+    color: rgb(39, 35, 32);
+    padding-left: 300px;
+    margin-top: 300px;
+    font-weight: bold;
+}
+
+.summary a {
+    height: 40px;
+    text-align: center;
+    border: 2px solid #1509f2f7;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #1509f2f7;
+    font-size: 13px;
+    margin-left: 557px;
+    padding: 10px 50px;
+    background: url(../img/загрузка.png) 15px no-repeat;
+}
+
+.summary a {
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.summary a:hover {
+    background: #344051;
+    color: white;
+}
+
+.summary a:active {
+    transform: scale(1.1);
+}
+
+.summary {
+    margin-top: 60px;
+}
+
+/* Блок3 я умею*/
+.i_can {
+    height: 625px;
+    width: 100%;
+    float: left;
+    background: url(../img/ноут.png) 14% 55% /30px 25px no-repeat, 
+              url(../img/знак.png) 37% 55% /30px 25px no-repeat,
+             url(../img/ракета.png) 61% 55% /30px 25px no-repeat,
+             url(../img/граммофон.png) 86% 55% /30px 25px no-repeat,
+             url(../img/картинка\ фона.png) 50% 50%/ 1400px 500px no-repeat;
+}
+
+.i_can h2 {
+    float: left;
+    font-size: 29px;
+    color: black;
+    font-weight: bold;
+    padding-top: 160px;
+    margin-left: 580px;
+    text-transform: uppercase;
+}
+
+.i_can h2::before {
+    content: "";
+    display: inline-block;
+    background-color: orange;
+    border-radius: 50%;
+
+}
+
+.i_can h2::before {
+    width: 100%;
+    height: 4px;
+    transform: scalex(0);
+    background-color: orange;
+    transition: all 0.3s;
+}
+
+.i_can h2:hover::before {
+    transform: scalex(1);
+}
+
+.block {
+    float: left;
+    width: 100%;
+    height: 300px;
+
+}
+
+.services {
+    width: 280px;
+    float: left;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.services h3 {
+    font-size: 20px;
+    color: orange;
+    font-weight: bold;
+
+}
+
+.services span {
+    font-size: 10px;
+}
+
+.services:nth-child(1) {
+    margin-left: 60px;
+}
+
+.services:nth-child(2) {
+    margin-left: 20px;
+}
+
+.services:nth-child(3) {
+    margin-left: 40px;
+}
+
+.services:nth-child(4) {
+    margin-left: 50px;
+}
+
+/*  Блок4 Кейс*/
+.case {
+    width: 100%;
+    height: 750px;
+    float: left;
+}
+
+.case h2 {
+    float: left;
+    font-size: 29px;
+    color: black;
+    font-weight: bold;
+    margin-left: 630px;
+    text-transform: uppercase;
+}
+
+.case h2::before {
+    content: "";
+    display: inline-block;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.case h2::before {
+    width: 100%;
+    height: 4px;
+    transform: scalex(0);
+    background-color: orange;
+    transition: all 0.3s;
+}
+
+.case h2:hover::before {
+    transform: scalex(1);
+}
+
+.carusel {
+    width: 600px;
+    height: 500px;
+    margin-left: 400px;
+    background-color: orange;
+    float: left;
+    border-radius: 15px;
+
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #4c14e6;
+    margin: 20px;
+    width: 50px;
+    height: 13px;
+
+}
+
+.carousel-control-prev-icon {
+    background-color: #4c14e6;
+    width: 30px;
+    height: 43px;
+}
+
+.carousel-control-next-icon {
+    background-color: #4c14e6;
+    width: 30px;
+    height: 43px;
+}
+
+.carousel-item img {
+    height: 500px;
+    width: 250px;
+}
+ 
+
+.case p {
+    float: left;
+    font-size: 12px;
+    color: rgb(39, 35, 32);
+    font-family: Calibri;
+    padding-left: 420px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.cases {
+    margin: 690px 100px 200px 200px;
+}
+
+.case h4 {
+    float: left;
+    margin: -310px 550px 465px 465px;
+}
+
+.clo p {
+    float: left;
+    font-size: 12px;
+    color: rgb(39, 35, 32);
+    font-family: Calibri;
+    padding-left: 460px;
+    margin-top: -460px;
+}
+
+.case a {
+    float: left;
+    border-radius: 5px;
+    text-decoration: none;
+    color: blanchedalmond;
+    background-color: #63b5ae;
+    padding: 5px 40px;
+    margin: -350px 50px 190px 190px;
+}
+
+/*  Блок 5 Расчет стоимости*/
+.price {
+    width: 100%;
+    height: 610px;
+    margin-top: 150px;
+    float: left;
+    background: url(..//img/линия\ подитога.png) 450px 450px/450px 1px no-repeat,
+        url(..//img/Прямоугольник\ 1.png) 350px 50px/650px 550px no-repeat;
+
+}
+
+.price h2 {
+    margin-top: 100px;
+    padding-left: 550px;
+    font-size: 29px;
+    color: black;
+    font-weight: bold;
+}
+
+select {
+    height: 40px;
+    width: 450px;
+    margin: 5px 120px 560px 450px;
+    background-color: #efefef;
+    color: #747474;
+
+}
+
+.price h4 {
+    font-size: 18px;
+    margin: 15px 150px 0px 450px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+form {
+    height: 65px;
+    width: 0px;
+}
+
+.cash h5 {
+    font-size: 12px;
+    margin-top: 25px;
+    margin-left: 450px;
+}
+
+.cash input {
+    width: 140px;
+    font-size: 14px;
+    float: left;
+    margin: 10px;
+    margin-left: 840px;
+    border-radius: 2px;
+}
+
+/*  Блок 6 Статистика*/
+.statistics {
+    width: 100%;
+    height: 610px;
+    float: left;
+    background: url(../img/фон3.png) 50% 50%/ 100% 400px no-repeat;
+}
+
+.statistics h2 {
+    float: left;
+    font-size: 29px;
+    font-weight: bold;
+    margin-top: 150px;
+    padding-left: 500px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+}
+
+.statistics h2::before {
+    content: "";
+    display: inline-block;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.statistics h2::before {
+    width: 100%;
+    height: 4px;
+    transform: scalex(0);
+    background-color: orange;
+    transition: all 0.3s;
+}
+
+.statistics h2:hover::before {
+    transform: scalex(1);
+}
+
+.block_1 {
+    float: left;
+    width: 100%;
+    height: 300px;
+    background: url(../img/смайл.png) 225px 33% /35px 35px no-repeat,
+        url(../img/скобки.png) 515px 33% /35px 35px no-repeat,
+        url(../img/галочка.png) 836px 33% /35px 35px no-repeat,
+        url(../img/кубок.png) 1143px 33% /35px 35px no-repeat;
+}
+
+.stat {
+    width: 280px;
+    float: left;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.stat h3 {
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+.stat span {
+    font-size: 15px;
+}
+
+.stat:nth-child(1) {
+    margin-left: 100px;
+}
+
+.stat:nth-child(2) {
+    margin-left: 10px;
+}
+
+.stat:nth-child(3) {
+    margin-left: 40px;
+}
+
+.stat:nth-child(4) {
+    margin-left: 31px;
+}
+
+
+/*  Блок 7 Контакты*/
+.review {
+    height: 600px;
+    width: 100%;
+}
+.review {
+    background:url(..//img/гео.png)  25% 30% /25px 25px  no-repeat,
+    url(..//img/конверт.png) 50% 30% /25px 25px  no-repeat,
+    url(..//img/труба.png)75% 30% / 25px 25px no-repeat,
+     url(..//img/Фон.png) 50% 50%/100% 550px no-repeat;
+    
+    float: left;
+}
+.review h2 {
+    float: left;
+    font-size: 29px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding-left: 550px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+.review  h2::before {
+    content: "";
+    display: inline-block;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.review  h2::before {
+    width: 100%;
+    height: 4px;
+    transform: scalex(0);
+    background-color: orange;
+    transition: all 0.3s;
+}
+
+.review  h2:hover::before {
+    transform: scalex(1);
+}
